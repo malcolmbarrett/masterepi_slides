@@ -1,0 +1,49 @@
+---
+title: "<span style='color:#E69F00'>Mastering R for Epidemiologic Research Slides</span>"
+date: "`r Sys.Date()`"
+output:
+  xaringan::moon_reader:
+    seal: false
+    css: ["default", "theme.css"]
+    lib_dir: libs
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+---
+
+```{r setup, include=FALSE}
+options(htmltools.dir.version = FALSE)
+knitr::opts_chunk$set(warning = FALSE, message = FALSE, fig.align = "center", dpi = 320)
+library(tidyverse)
+```
+
+class: inverse, center, middle
+
+###[00-intro](00-intro/intro.html)
+###[01-reading_data](01-reading_data/reading_data.html)
+###[02-dplyr_5verbs](02-dplyr_5verbs/dplyr_5verbs.html)
+###[03-ggplot_basics](03-ggplot_basics/ggplot_basics.html)
+###[04-ggplot_customizing](04-ggplot_customizing/ggplot_customizing.html)
+###[06-tidyr_basics](06-tidyr_basics/tidyr_basics.html)
+
+---
+
+class: inverse, center, middle
+
+###[07-modeling_and_broom](07-modeling_and_broom/modeling_and_broom.html)
+###[08-types_and_functions](08-types_and_functions/types_and_functions.html)
+###[09-purrr_basics](09-purrr_basics/purrr_basics.html)
+###[10-rmarkdown_basics](10-rmarkdown_basics/rmarkdown_basics.html)
+###[11-causal_modeling](11-causal_modeling/causal_modeling.html)
+
+---
+
+class: inverse, center, middle
+
+###[13-shiny_basics](13-shiny_basics/shiny_basics.html)
+###[14-shiny_reactivity](14-shiny_reactivity/shiny_reactivity.html)
+###[15-shiny_design_ui](15-shiny_design_ui/shiny_design_ui.html)
+###[16-shiny_dashboards](16-shiny_dashboards/shiny_dashboards.html)
+###[18-r_best_practices](18-r_best_practices/r_best_practices.html)
+###[19-r_packages_whole_game](19-r_packages_whole_game/r_packages_whole_game.html)
