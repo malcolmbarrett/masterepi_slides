@@ -25,12 +25,14 @@ class: inverse, center, middle
 ###[02-dplyr_5verbs](02-dplyr_5verbs/dplyr_5verbs.html)
 ###[03-ggplot_basics](03-ggplot_basics/ggplot_basics.html)
 ###[04-ggplot_customizing](04-ggplot_customizing/ggplot_customizing.html)
-###[06-tidyr_basics](06-tidyr_basics/tidyr_basics.html)
+###[05-ggplot_recreate_challenge](05-ggplot_recreate_challenge/ggplot_recreate_challenge.html)
+
 
 ---
 
 class: inverse, center, middle
 
+###[06-tidyr_basics](06-tidyr_basics/tidyr_basics.html)
 ###[07-modeling_and_broom](07-modeling_and_broom/modeling_and_broom.html)
 ###[08-types_and_functions](08-types_and_functions/types_and_functions.html)
 ###[09-purrr_basics](09-purrr_basics/purrr_basics.html)
