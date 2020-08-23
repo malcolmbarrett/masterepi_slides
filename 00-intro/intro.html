@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<html lang="" xml:lang="">
   <head>
     <title>Introduction to the Tidyverse</title>
     <meta charset="utf-8" />
-    <meta name="date" content="2019-08-29" />
+    <meta name="date" content="2020-08-22" />
+    <script src="libs/header-attrs/header-attrs.js"></script>
     <link href="libs/remark-css/default.css" rel="stylesheet" />
     <link rel="stylesheet" href="theme.css" type="text/css" />
   </head>
@@ -13,16 +14,15 @@ class: center, middle, inverse, title-slide
 
 # <span style="color:#E69F00">Introduction to the Tidyverse</span>
 ## <span style="color:#56B4E9">Import, wrangle, model, and communicate data</span> <br>
-### 2019-08-29
+### 2020-08-22
 
 ---
 
 
 
-
 class: inverse, center
 
-background-image: url(tidyhex.png)
+background-image: url(img/tidyhex.png)
 ---
 
 class: inverse, center
@@ -53,9 +53,11 @@ background-position: 90% 10%
 #### [stringr](https://github.com/tidyverse/stringr), for strings.
 #### [forcats](https://github.com/hadley/forcats), for factors.
 
----
+
 
 class: inverse, center, middle
+
+
 
 # **This course is hands on!**
 # Each section has an exercises file: **`exercises.Rmd`**
@@ -64,25 +66,26 @@ class: inverse, center, middle
 
 # exercises.Rmd
 
-&lt;img src="overview.png" width="100%" height="100%" style="display: block; margin: auto;" /&gt;
+&lt;img src="img/overview.png" width="100%" height="100%" style="display: block; margin: auto;" /&gt;
+
 
 ---
 
 # code chunks
 
-&lt;img src="code_chunks.png" width="75%" height="75%" style="display: block; margin: auto;" /&gt;
+&lt;img src="img/code_chunks.png" width="75%" height="75%" style="display: block; margin: auto;" /&gt;
 
 ---
 
 # running code chunks
 
-&lt;img src="running_code_chunks.png" width="70%" height="70%" style="display: block; margin: auto;" /&gt;
+&lt;img src="img/running_code_chunks.png" width="70%" height="70%" style="display: block; margin: auto;" /&gt;
 
 ---
 
 # outputting to the console
 
-&lt;img src="console_code_chunks.png" width="70%" height="70%" style="display: block; margin: auto;" /&gt;
+&lt;img src="img/console_code_chunks.png" width="70%" height="70%" style="display: block; margin: auto;" /&gt;
 
 ---
 
@@ -100,7 +103,7 @@ class: inverse, center, middle
 
 class: inverse, middle, center
 
-# Let's head to http://bit.ly/master_r_epi
+# Let's head to https://rstudio.cloud/
     </textarea>
 <style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
 <script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
@@ -147,9 +150,25 @@ if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
     }
     deleted = true;
   });
-})();</script>
-
-<script>
+})();
+(function() {
+  "use strict"
+  // Replace <script> tags in slides area to make them executable
+  var scripts = document.querySelectorAll(
+    '.remark-slides-area .remark-slide-container script'
+  );
+  if (!scripts.length) return;
+  for (var i = 0; i < scripts.length; i++) {
+    var s = document.createElement('script');
+    var code = document.createTextNode(scripts[i].textContent);
+    s.appendChild(code);
+    var scriptAttrs = scripts[i].attributes;
+    for (var j = 0; j < scriptAttrs.length; j++) {
+      s.setAttribute(scriptAttrs[j].name, scriptAttrs[j].value);
+    }
+    scripts[i].parentElement.replaceChild(s, scripts[i]);
+  }
+})();
 (function() {
   var links = document.getElementsByTagName('a');
   for (var i = 0; i < links.length; i++) {
@@ -158,7 +177,23 @@ if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
     }
   }
 })();
-</script>
+// adds .remark-code-has-line-highlighted class to <pre> parent elements
+// of code chunks containing highlighted lines with class .remark-code-line-highlighted
+(function(d) {
+  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
+  const preParents = [];
+  const findPreParent = function(line, p = 0) {
+    if (p > 1) return null; // traverse up no further than grandparent
+    const el = line.parentElement;
+    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
+  };
+
+  for (let line of hlines) {
+    let pre = findPreParent(line);
+    if (pre && !preParents.includes(pre)) preParents.push(pre);
+  }
+  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
+})(document);</script>
 
 <script>
 slideshow._releaseMath = function(el) {
