@@ -37,15 +37,5 @@ class: inverse, center, middle
 ###[08-types_and_functions](08-types_and_functions/types_and_functions.html)
 ###[09-purrr_basics](09-purrr_basics/purrr_basics.html)
 ###[10-rmarkdown_basics](10-rmarkdown_basics/rmarkdown_basics.html)
-###[11-causal_modeling](11-causal_modeling/causal_modeling.html)
-
----
-
-class: inverse, center, middle
-
-###[13-shiny_basics](13-shiny_basics/shiny_basics.html)
-###[14-shiny_reactivity](14-shiny_reactivity/shiny_reactivity.html)
-###[15-shiny_design_ui](15-shiny_design_ui/shiny_design_ui.html)
-###[16-shiny_dashboards](16-shiny_dashboards/shiny_dashboards.html)
-###[18-r_best_practices](18-r_best_practices/r_best_practices.html)
-###[19-r_packages_whole_game](19-r_packages_whole_game/r_packages_whole_game.html)
+###[11-shiny_basics](11-shiny_basics/shiny_basics.html)
+###[13-r_best_practices](13-r_best_practices/r_best_practices.html)
