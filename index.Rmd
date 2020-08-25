@@ -37,5 +37,5 @@ class: inverse, center, middle
 ###[08-types_and_functions](08-types_and_functions/types_and_functions.html)
 ###[09-purrr_basics](09-purrr_basics/purrr_basics.html)
 ###[10-rmarkdown_basics](10-rmarkdown_basics/rmarkdown_basics.html)
-###[11-shiny_basics](11-shiny_basics/shiny_basics.html)
-###[13-r_best_practices](13-r_best_practices/r_best_practices.html)
+###[12-shiny_basics](11-shiny_basics/shiny_basics.html)
+###[14-r_best_practices](13-r_best_practices/r_best_practices.html)
